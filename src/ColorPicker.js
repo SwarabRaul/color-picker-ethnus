@@ -1,4 +1,3 @@
-// ColorPicker.js
 import React, { Component } from 'react';
 
 class ColorPicker extends Component {
@@ -22,12 +21,11 @@ class ColorPicker extends Component {
             isOpen: false,
         });
 
-        // Change the background color of the entire page
         document.body.style.backgroundColor = color;
     };
 
-    redirectToGoogle = () => {
-        window.location.href = 'https://www.google.com';
+    redirectToIndexPage = () => {
+        window.location.href = 'https://swarabraul.github.io/React-Ethnus-IndexPage/';
     };
 
     render() {
@@ -52,7 +50,7 @@ class ColorPicker extends Component {
                 {selectedColor && (
                     <div>
                         <p>You picked: {selectedColor}</p>
-                        <button onClick={this.redirectToGoogle}>Back to Google</button>
+                        <button onClick={this.redirectToIndexPage}>Back to Index Page</button>
                     </div>
                 )}
             </div>
